@@ -51,8 +51,8 @@ public class LeftRightTopBottomViewOfBinaryTree {
 		if (node == null) {
 			return;
 		}
-		Queue<BinaryTreeNodeQueue> q = new LinkedList<BinaryTreeNodeQueue>();
-		Map<Integer, BinaryTreeNode> topViewMap = new HashMap<Integer, BinaryTreeNode>();
+		Queue<BinaryTreeNodeQueue> q = new LinkedList<>();
+		Map<Integer, BinaryTreeNode> topViewMap = new HashMap<>();
 		q.add(new BinaryTreeNodeQueue(node, 0));
 		while (!q.isEmpty()) {
 			BinaryTreeNodeQueue nodeFromQ = q.poll();
@@ -75,8 +75,8 @@ public class LeftRightTopBottomViewOfBinaryTree {
 		if (node == null) {
 			return;
 		}
-		Queue<BinaryTreeNodeQueue> q = new LinkedList<BinaryTreeNodeQueue>();
-		Map<Integer, BinaryTreeNode> topViewMap = new HashMap<Integer, BinaryTreeNode>();
+		Queue<BinaryTreeNodeQueue> q = new LinkedList<>();
+		Map<Integer, BinaryTreeNode> topViewMap = new HashMap<>();
 		q.add(new BinaryTreeNodeQueue(node, 0));
 		while (!q.isEmpty()) {
 			BinaryTreeNodeQueue nodeFromQ = q.poll();

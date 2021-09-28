@@ -7,7 +7,6 @@ public class ShortestPathBinaryMazeLeeAlgo {
 
     private static int shortestPathBinaryMaze(int[][] mat, int[] source, int[] destination) {
         Point sourcePoint = new Point(source[0], source[1]);
-        Point destinationPoint = new Point(source[0], source[1]);
         QueuePoint qP = new QueuePoint(0, sourcePoint);
         boolean[][] isVisit = new boolean[mat.length][mat[0].length];
         for (int i = 0; i < mat.length; i++) {

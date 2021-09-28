@@ -16,11 +16,11 @@ public class ValidParanthesis {
 			list.add(s);
 			return;
 		}
-		if (i < n) {
-			backtrack(n, i + 1, j, list, s + "(");
-		}
 		if (j < i) {
 			backtrack(n, i, j + 1, list, s + ")");
+		}
+		if (i < n) {
+			backtrack(n, i + 1, j, list, s + "(");
 		}
 	}
 }

@@ -19,8 +19,7 @@ public class WordSearch {
         if (index >= word.length()) {
             return true;
         }
-        if (row < 0 || col < 0 || row == board.length || col == board[0].length ||
-                this.board[row][col] != word.charAt(index)) {
+        if (row < 0 || col < 0 || row == board.length || col == board[0].length || this.board[row][col] != word.charAt(index)) {
             return false;
         }
         boolean flag = false;
@@ -42,9 +41,12 @@ public class WordSearch {
         char[][] board = {
                 {'A', 'B', 'C', 'E'},
                 {'S', 'F', 'C', 'S'},
+                {'S', 'F', 'X', 'S'},
+                {'S', 'F', 'Q', 'S'},
+                {'S', 'F', 'C', 'S'},
                 {'A', 'D', 'E', 'E'}
         };
-        String word = "ABCF";
+        String word = "ABCCX";
         System.out.println(new WordSearch().exist(board, word));
     }
 }

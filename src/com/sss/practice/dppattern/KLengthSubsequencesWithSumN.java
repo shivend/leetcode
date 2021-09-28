@@ -1,4 +1,4 @@
-package com.sss.practice.easy;
+package com.sss.practice.dppattern;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +21,6 @@ public class KLengthSubsequencesWithSumN {
 
     public static void main(String[] args) {
         List<Integer> temp = new ArrayList<>();
-        findSub(5, 3, 5, temp);
+        findSub(3, 2, 3, temp);
     }
 }

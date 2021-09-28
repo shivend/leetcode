@@ -38,8 +38,8 @@ public class DepthHeightAndWidthOfBinaryTree {
 
 	int findWidth(BinaryTreeNode node) {
 		int maxWidth = 0;
-		int height = findHeightUtil(node, 7);
-		for (int i = 0; i < height; i++) {
+		int h = findHeightUtil(node, 7);
+		for (int i = 0; i < h; i++) {
 			int width = getWidth(node, i);
 			if (width > maxWidth)
 				maxWidth = width;
